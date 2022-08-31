@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Banner from './Components/Banner/Banner';
+import DeeperWork from './Components/DeeperWork/DeeperWork';
+import Footer from './Components/Footer/Footer';
+import Slack_Review from './Components/Slack_Review/Slack_Review';
+import Team from './Components/Team/Team';
+import Tools from './Components/Tools/Tools';
+import Welcome from './Components/Welcome/Welcome';
+import Work from './Components/Work/Work';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner/>
+      <Team/>
+      <Work/>
+      <Tools/>
+      <Slack_Review/>
+      <DeeperWork/>
+      <Welcome/>
+      <Footer/>
     </div>
   );
 }
